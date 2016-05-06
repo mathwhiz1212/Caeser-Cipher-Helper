@@ -5,34 +5,46 @@ function printTables(tables) {
     //console.log(table.header);
     table.rows.forEach(function (row, j) {
     longest[j] = row.length;
-    var k = -1;
-    var k = k + 1;
-    console.log(k);
+    var k = 0;
+  //  console.log(k);
     var kk;
     var kk = row[k];
-    var tt;
+    var tt = 0;
     var ll;
     var ll = longest[j];
   //  var j = 0;
     var lgth = 0;
   //console.log(ll);
-
+   
   
-  if( kk.length > lgth){
-      var lgth = kk.length;
-      var tt = row[k];
-      //console.log(tt);
-  }
+//console.log(row[1]);
   
-  console.log(tt);
+  //console.log(ll);
         //console.log(i)
   //for( var k=0; k < ll; k++){
     
-
-  //  console.log(row[k]);
+    
+    
+    for( var k=0; k < ll; k++){
+      var kk = row[k];
+      
+      var kkl = kk.length;
+      
+      if( kkl > lgth){
+          var lgth = kkl;
+          console.log(lgth);
+          var tt = kkl;
+          
+        //  console.log(tt);
+      }
+    }
+    
+    //console.log(k);
+//console.log(row);
+  //console.log(row[k]);
     
   //}
-//  }
+ //}
       // console.log(row);
       
       //var arr = ['first item', 'second item is longer than the third one', 
@@ -60,7 +72,7 @@ printTables(require('./data.json').tables);
     { "header": [ "First", "Last", "Age", "Bio" ]
     , "rows": [
         [ "AJ", "ONeal", "29", "Awesome. JavaScript." ]
-      , [ "Joshua", "Mudge", "15", "Kid. Genius." ]
+      , [ "Joshua", "Mudge", "99", "Genius." ]
       ]
     }
   , { "header": [ "Title", "Author", "Rating", "Comment" ]

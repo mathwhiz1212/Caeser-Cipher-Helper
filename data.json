@@ -2,14 +2,8 @@
   "tables": [
     { "header": [ "First", "Last", "Age", "Bio" ]
     , "rows": [
-        [ "AJ", "ONeal", "29", "Awesome. JavaScript." ]
-      , [ "Joshua", "Mudge", "15", "Kid. Genius." ]
-      ]
-    }
-  , { "header": [ "Title", "Author", "Rating", "Comment" ]
-    , "rows": [
-        [ "Copying & Pasting", "O'RLY", "10", "This is the best book evaaaaar!!! It learned me everything I need to know!" ]
-      , [ "Beauty & The Beast", "Disney", "7.5", "Great love story." ]
+       [ "AJ", "ONeal", "29", "Awesome. JavaScript." ]
+     , [ "Joshua", "Mudge", "99", "Genius." ]
       ]
     }
   ]
