@@ -1,32 +1,37 @@
 function printTables(tables) {
   var longest = [];
-var j = 0;
-var lgth = 0;
-var tt;
-var k;
 
   tables.forEach(function (table, i) {
     //console.log(table.header);
     table.rows.forEach(function (row, j) {
     longest[j] = row.length;
-    var ll;
-    var ll = longest[j];
-  //  console.log(ll);
-
-
-    
-    
-  for( var k=0; k < ll; k++){
+    var k = -1;
+    var k = k + 1;
+    console.log(k);
     var kk;
     var kk = row[k];
-    console.log(k)
-  //  console.log(row[k]);
-      if( kk.length > lgth){
-          var lgth = kk.length;
-          var tt = row[k];
-          //console.log(tt);
-      }
+    var tt;
+    var ll;
+    var ll = longest[j];
+  //  var j = 0;
+    var lgth = 0;
+  //console.log(ll);
+
+  
+  if( kk.length > lgth){
+      var lgth = kk.length;
+      var tt = row[k];
+      //console.log(tt);
   }
+  
+  console.log(tt);
+        //console.log(i)
+  //for( var k=0; k < ll; k++){
+    
+
+  //  console.log(row[k]);
+    
+  //}
 //  }
       // console.log(row);
       
