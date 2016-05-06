@@ -33,7 +33,7 @@ function printTables(tables) {
       if( kkl > lgth){
           var lgth = kkl;
           console.log(lgth);
-          var tt = kkl;
+          tt = kkl;
           
         //  console.log(tt);
       }
