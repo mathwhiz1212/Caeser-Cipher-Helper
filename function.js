@@ -1,6 +1,7 @@
 function printTables(tables) {
   var longest = [];
-
+hh = 0
+tt = 0;
   tables.forEach(function (table, i) {
     //console.log(table.header);
     table.rows.forEach(function (row, j) {
@@ -9,11 +10,12 @@ function printTables(tables) {
   //  console.log(k);
     var kk;
     var kk = row[k];
-    var tt = 0;
+    
     var ll;
     var ll = longest[j];
   //  var j = 0;
     var lgth = 0;
+    
   //console.log(ll);
    
   
@@ -32,13 +34,20 @@ function printTables(tables) {
       
       if( kkl > lgth){
           var lgth = kkl;
-          console.log(lgth);
+          
           tt = kkl;
           
         //  console.log(tt);
       }
     }
     
+    if ( tt > hh ) {
+      hh = tt;
+    }
+    
+  //  console.log(hh);
+//    console.log(ttt);
+    //console.log(hi);
     //console.log(k);
 //console.log(row);
   //console.log(row[k]);
