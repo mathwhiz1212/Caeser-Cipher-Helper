@@ -1,0 +1,28 @@
+http://tobyho.com/2011/10/15/getting-terminal-size-in-node/
+
+http://stackoverflow.com/questions/30335637/get-width-of-terminal-in-node-js
+
+http://stackoverflow.com/questions/10956386/how-wide-is-the-node-js-console
+
+
+Trunacte using using the toFixed() function.
+
+string.toFixed(size) + "..."
+
+
+
+Okay, the first thing I would do would be to figure out what the longest data field is. Do you have any ideas on how to do  that? I have an idea if you're stuck
+
+ME: well compare the length using string.length
+
+
+Yeah, so you just need to figure out how to compare all the strings then
+
+Then you'll have to make all of the headers so they are the same length as the longest data field and then put everything jnt
+*in
+
+That would probably work. I would do that last though, get it to work without super long values
+
+
+
+

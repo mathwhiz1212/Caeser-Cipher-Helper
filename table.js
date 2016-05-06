@@ -53,3 +53,7 @@ function printTables(tables) {
 
 printTables(require('./data.json').tables);
 
+
+//Truncation: 
+
+
