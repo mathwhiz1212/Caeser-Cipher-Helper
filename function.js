@@ -41,13 +41,13 @@ function printTables(tables) {
       
       console.log(hh);
       
-      //Truncation, experimental code. Probably breaks stuff.
-      //Evan's idea, as most are.
-      
-      var sub = kk.substring(0,50);
-      console.log(sub);
-      
     });
+    
+    //Truncation, experimental code. Probably breaks stuff.
+    //Evan's idea, as most are.
+    
+    var sub = kk.substring(0,50);
+    console.log(sub);
     
   });
 }
