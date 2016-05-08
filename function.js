@@ -9,6 +9,7 @@ function printTables(tables) {
   var hh = 0
   var tt = 0;
   var j;
+  var kk;
   
   tables.forEach(function (table, i) {
     //console.log(table.header);
@@ -17,7 +18,6 @@ function printTables(tables) {
       
       longest[j] = row.length;
       var k = 0;
-      var kk;
       var kk = row[k];
       var ll;
       var ll = longest[j];
@@ -41,7 +41,14 @@ function printTables(tables) {
       
       console.log(hh);
       
+      //Truncation, experimental code. Probably breaks stuff.
+      //Evan's idea, as most are.
+      
+      var sub = kk.substring(0,50);
+      console.log(sub);
+      
     });
+    
   });
 }
 
