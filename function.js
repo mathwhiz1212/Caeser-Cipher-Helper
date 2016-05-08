@@ -8,8 +8,10 @@ function printTables(tables) {
   var longest = [];
   var hh = 0
   var tt = 0;
-  var j;
+  var k = 0;
   var kk;
+  var ll;
+  var j;
   
   tables.forEach(function (table, i) {
     //console.log(table.header);
@@ -17,9 +19,7 @@ function printTables(tables) {
     table.rows.forEach(function (row, j) {
       
       longest[j] = row.length;
-      var k = 0;
       var kk = row[k];
-      var ll;
       var ll = longest[j];
       var lgth = 0;
       
