@@ -1,63 +1,54 @@
-function printTables(tables) {
-  var longest = [];
+'use strict'
 
+//Copyright AJ Oneal and Joshua Mudge.
+//Licensed under the MPLv2 license: https://spdx.org/licenses/MPL-2.0
+
+function printTables(tables) {
+  
+  var longest = [];
+  var hh = 0
+  var tt = 0;
+  var j;
+  var kk;
+  
   tables.forEach(function (table, i) {
     //console.log(table.header);
+    
     table.rows.forEach(function (row, j) {
-    longest[j] = row.length;
-
-    if (k == null) {
+      
+      longest[j] = row.length;
       var k = 0;
-    }
-
- if (k => 0) {
-
- var k = k + 1;
-
- }
-
-
-    var kk;
-    var kk = row[k];
-    var tt;
-    var ll;
-    var ll = longest[j];
-  //  var j = 0;
-    var lgth = 0;
-//  console.log(ll);
-   var kkk = kk.length;
-
-  if( kkk > lgth){
-      var lgth = kkk;
-      var tt = row[k];
-      //console.log(tt);
-  }
-
- console.log(k);
-        //console.log(i)
-  //for( var k=0; k < ll; k++){
-
-
-  //  console.log(row[k]);
-
-  //}
-//  }
-      // console.log(row);
-
-      //var arr = ['first item', 'second item is longer than the third one',
-                 //'third longish item'];
-
-      //for(var i=0; i < longest.length; i++){
-          // if(longest[j].length > lgth){
-          //     var lgth = longest[j].length;
-          //     longestt = longest[j];
-          // }
-    //  }
-
-
-      //4 items in each array
-
-   });
+      var kk = row[k];
+      var ll;
+      var ll = longest[j];
+      var lgth = 0;
+      
+      for( var k=0; k < ll; k++){
+        
+        var kk = row[k];
+        var kkl = kk.length;
+        
+        if( kkl > lgth){
+          var lgth = kkl;
+          tt = kkl;
+        }
+        
+      }
+      
+      if ( tt > hh ) {
+        hh = tt;
+      }
+      
+      console.log(hh);
+      
+      //Truncation, experimental code. Probably breaks stuff.
+      //Evan's idea, as most are.
+      
+      var sub = kk.substring(0,50);
+      console.log(sub);
+      
+    });
+    
   });
 }
 
@@ -81,3 +72,8 @@ printTables(require('./data.json').tables);
   ]
 }
 */
+
+//console.log(row[1]);
+//console.log(i)
+// console.log(row);
+//var arr = [ "d", "sdh", "This is the best book evaaaaar!!! It learned me everything I need to know!" ]

@@ -1,3 +1,5 @@
+//Solution from stackoverflow.
+
 var arr = ['first item', 'second item is longer than the third one', 
            'third longish item'];
 
