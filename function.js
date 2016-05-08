@@ -19,13 +19,13 @@ function printTables(tables) {
     table.rows.forEach(function (row, j) {
       
       longest[j] = row.length;
-      var kk = row[k];
+      kk = row[k];
       var ll = longest[j];
       var lgth = 0;
       
       for( var k=0; k < ll; k++){
         
-        var kk = row[k];
+        kk = row[k];
         var kkl = kk.length;
         
         if( kkl > lgth){
