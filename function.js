@@ -1,32 +1,18 @@
 function printTables(tables) {
   var longest = [];
-hh = 0
-tt = 0;
+  hh = 0
+  tt = 0;
   tables.forEach(function (table, i) {
     //console.log(table.header);
     table.rows.forEach(function (row, j) {
     longest[j] = row.length;
     var k = 0;
-  //  console.log(k);
     var kk;
     var kk = row[k];
-    
     var ll;
     var ll = longest[j];
-  //  var j = 0;
     var lgth = 0;
-    
-  //console.log(ll);
-   
-  
-//console.log(row[1]);
-  
-  //console.log(ll);
-        //console.log(i)
-  //for( var k=0; k < ll; k++){
-    
-    
-    
+
     for( var k=0; k < ll; k++){
       var kk = row[k];
       
@@ -36,39 +22,13 @@ tt = 0;
           var lgth = kkl;
           
           tt = kkl;
-          
-        //  console.log(tt);
       }
     }
     
     if ( tt > hh ) {
       hh = tt;
     }
-    
-  //  console.log(hh);
-//    console.log(ttt);
-    //console.log(hi);
-    //console.log(k);
-//console.log(row);
-  //console.log(row[k]);
-    
-  //}
- //}
-      // console.log(row);
-      
-      //var arr = ['first item', 'second item is longer than the third one', 
-                 //'third longish item'];
-
-      //for(var i=0; i < longest.length; i++){
-          // if(longest[j].length > lgth){
-          //     var lgth = longest[j].length;
-          //     longestt = longest[j];
-          // }      
-    //  } 
-
-      
-      //4 items in each array
-      
+      console.log(hh);
    });
   });
 }
@@ -93,3 +53,43 @@ printTables(require('./data.json').tables);
   ]
 }
 */
+  //  console.log(k);
+    //  var j = 0;
+  
+//console.log(ll);
+
+
+//console.log(row[1]);
+
+//console.log(ll);
+    //console.log(i)
+//for( var k=0; k < ll; k++){
+
+
+
+
+
+
+//  console.log(hh);
+//    console.log(ttt);
+  //console.log(hi);
+  //console.log(k);
+//console.log(row);
+//console.log(row[k]);
+  
+//}
+//}
+    // console.log(row);
+    
+    //var arr = ['first item', 'second item is longer than the third one', 
+               //'third longish item'];
+
+    //for(var i=0; i < longest.length; i++){
+        // if(longest[j].length > lgth){
+        //     var lgth = longest[j].length;
+        //     longestt = longest[j];
+        // }      
+  //  } 
+
+    
+    //4 items in each array
