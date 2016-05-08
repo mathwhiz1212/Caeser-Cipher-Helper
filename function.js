@@ -1,7 +1,9 @@
+'use strict'
+
 function printTables(tables) {
   var longest = [];
-  hh = 0
-  tt = 0;
+  var hh = 0
+  var tt = 0;
   tables.forEach(function (table, i) {
     //console.log(table.header);
     table.rows.forEach(function (row, j) {
