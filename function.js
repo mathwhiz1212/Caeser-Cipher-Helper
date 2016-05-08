@@ -1,5 +1,8 @@
 'use strict'
 
+//Copyright AJ Oneal and Joshua Mudge.
+//Licensed under the MPLv2 license: https://spdx.org/licenses/MPL-2.0
+
 function printTables(tables) {
   var longest = [];
   var hh = 0
