@@ -21,7 +21,7 @@ printTables(require('./data.json').tables;)
     { "header": [ "First", "Last", "Age", "Bio" ]
     , "rows": [
         [ "AJ", "ONeal", "29", "Awesome. JavaScript." ]
-      , [ "Joshua", "Mudge", "15", "Kid. Genius." ]
+      , [ "Joshua", "Mudge", "99", " Genius." ]
       ]
     }
   , { "header": [ "Title", "Author", "Rating", "Comment" ]
