@@ -22,4 +22,3 @@ Then you'll have to make all of the headers so they are the same length as the l
 *in
 
 That would probably work. I would do that last though, get it to work without super long values
-
