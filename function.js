@@ -4,6 +4,7 @@
 //Licensed under the MPLv2 license: https://spdx.org/licenses/MPL-2.0
 
 function printTables(tables) {
+  
   var longest = [];
   var hh = 0
   var tt = 0;
@@ -11,32 +12,36 @@ function printTables(tables) {
   
   tables.forEach(function (table, i) {
     //console.log(table.header);
-    table.rows.forEach(function (row, j) {
-    longest[j] = row.length;
-    var k = 0;
-    var kk;
-    var kk = row[k];
-    var ll;
-    var ll = longest[j];
-    var lgth = 0;
-
-    for( var k=0; k < ll; k++){
-      var kk = row[k];
-      
-      var kkl = kk.length;
-      
-      if( kkl > lgth){
-          var lgth = kkl;
-          
-          tt = kkl;
-      }
-    }
     
-    if ( tt > hh ) {
-      hh = tt;
-    }
+    table.rows.forEach(function (row, j) {
+      
+      longest[j] = row.length;
+      var k = 0;
+      var kk;
+      var kk = row[k];
+      var ll;
+      var ll = longest[j];
+      var lgth = 0;
+      
+      for( var k=0; k < ll; k++){
+        
+        var kk = row[k];
+        var kkl = kk.length;
+        
+        if( kkl > lgth){
+          var lgth = kkl;
+          tt = kkl;
+        }
+        
+      }
+      
+      if ( tt > hh ) {
+        hh = tt;
+      }
+      
       console.log(hh);
-   });
+      
+    });
   });
 }
 
