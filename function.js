@@ -49,6 +49,10 @@ function printTables(tables) {
     var sub = kk.substring(0,50);
     console.log(sub);
     
+//Code for getting terminal size.
+
+console.log('Terminal size: ' + process.stdout.columns + 'x' + process.stdout.rows);
+
   });
 }
 
