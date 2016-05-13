@@ -4,7 +4,7 @@
 //Licensed under the MPLv2 license: https://spdx.org/licenses/MPL-2.0
 
 function printTables(tables) {
-  
+
   var longest = [];
   var hh = 0
   var tt = 0;
@@ -12,46 +12,46 @@ function printTables(tables) {
   var kk;
   var ll;
   var j;
-  
+
   tables.forEach(function (table, i) {
     //console.log(table.header);
-    
+
     table.rows.forEach(function (row, j) {
-      
+
       longest[j] = row.length;
       kk = row[k];
       var ll = longest[j];
       var lgth = 0;
-      
+
       for( var k=0; k < ll; k++){
-        
+
         kk = row[k];
         var kkl = kk.length;
-        
+
         if( kkl > lgth){
           var lgth = kkl;
           tt = kkl;
         }
-        
+
       }
-      
+
       if ( tt > hh ) {
         hh = tt;
       }
-      
+
       console.log(hh);
-      
+
     });
-    
+
     //Truncation, experimental code. Probably breaks stuff.
     //Evan's idea, as most are.
-    
-    var sub = kk.substring(0,50);
-    console.log(sub);
-    
-//Code for getting terminal size.
 
-console.log('Terminal size: ' + process.stdout.columns + 'x' + process.stdout.rows);
+    var sub = kk.substring(0,5) + "...";
+    console.log(sub);
+
+//Code for getting terminal width.
+
+console.log("Width: " + process.stdout.columns);
 
   });
 }
