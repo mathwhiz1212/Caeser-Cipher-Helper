@@ -39,19 +39,20 @@ function printTables(tables) {
         hh = tt;
       }
 
-      console.log(hh);
+    //  console.log(hh);
 
     });
 
+    //Code for getting terminal width.
+
+    var size = process.stdout.columns;
+    //console.log(size);
+
     //Truncation, experimental code. Probably breaks stuff.
     //Evan's idea, as most are.
-
-    var sub = kk.substring(0,5) + "...";
+ var subpre = size / 40;
+    var sub = kk.substring(0,subpre) + "...";
     console.log(sub);
-
-//Code for getting terminal width.
-
-console.log("Width: " + process.stdout.columns);
 
   });
 }
