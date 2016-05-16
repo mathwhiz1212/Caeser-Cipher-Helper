@@ -12,6 +12,8 @@ function printTables(tables) {
   var kk;
   var ll;
   var j;
+  var space = "     ";
+  var combined;
 
   tables.forEach(function (table, i) {
     //console.log(table.header);
@@ -22,11 +24,15 @@ function printTables(tables) {
       kk = row[k];
       var ll = longest[j];
       var lgth = 0;
-
       for( var k=0; k < ll; k++){
 
         kk = row[k];
         var kkl = kk.length;
+
+        //Attempt at getting string and adding spaces.
+
+        combined = kk + space + kk;
+        console.log(combined);
 
         if( kkl > lgth){
           var lgth = kkl;
@@ -50,9 +56,10 @@ function printTables(tables) {
 
     //Truncation, experimental code. Probably breaks stuff.
     //Evan's idea, as most are.
+
  var subpre = size / 40;
     var sub = kk.substring(0,subpre) + "...";
-    console.log(sub);
+  //  console.log(sub);
 
   });
 }
