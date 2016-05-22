@@ -40,7 +40,6 @@ function printTables(tables) {
          } else {
            // 0 = 0 + space + actual text
            combined = combined + space + row[k];
-           console.log(combined); 
          }
 
         if( kkl > lgth) {
@@ -49,6 +48,8 @@ function printTables(tables) {
         }
 
       }
+
+console.log(combined); 
 
       if ( tt > hh ) {
         hh = tt;
