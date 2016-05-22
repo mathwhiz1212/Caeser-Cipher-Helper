@@ -24,17 +24,26 @@ function printTables(tables) {
       kk = row[k];
       var ll = longest[j];
       var lgth = 0;
+      var combined = 0;
+      
       for( var k=0; k < ll; k++){
 
         kk = row[k];
         var kkl = kk.length;
 
         //Attempt at getting string and adding spaces.
+         if(combined == 0) {
+           
+           combined = kk;
+          //console.log(kk);
+           
+         } else {
+           // 0 = 0 + space + actual text
+           combined = combined + space + row[k];
+           console.log(combined); 
+         }
 
-        combined = kk + space + kk;
-        console.log(combined);
-
-        if( kkl > lgth){
+        if( kkl > lgth) {
           var lgth = kkl;
           tt = kkl;
         }
@@ -60,7 +69,8 @@ function printTables(tables) {
  var subpre = size / 40;
     var sub = kk.substring(0,subpre) + "...";
   //  console.log(sub);
-
+  var co = combined;
+  
   });
 }
 
