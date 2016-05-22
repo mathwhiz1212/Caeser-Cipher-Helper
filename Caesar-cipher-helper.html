@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--Copyright 2016 Joshua Mudge Licensed under the Apache License 2.0. See license file for information.-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher Helper</title>
+</head>
+<p>Caesar Cipher helper</p>
+<p>a=1 b=2 c=3 d=4 e=5 f=6 g=7 h=8 i=9 j=10 k=11 l=12 m=13 n=14 o=15 p=16 q=17 r=18 s=19 t=20 u=21 v=22 w=23 x=24 y=25 z=26</p>
+<p>Enter your secret message:</p>
+<p style="font-size:.75em">Please enter only letters, no caps, spaces or punctuation.</p>
+<input type="text" id="userInput"></input><br><br>
+<p>Shift: 1-26 (Please only enter numbers.)</p>
+<p style="font-size:.75em;">The breaking feature may not work in all cases. You need enough text for it to be accurate.</p>
+<input type="number" id="shiftNum"></input>
+<input type="button" value="Encipher" onclick="encipher()" />
+<input type="button" value="Decipher" onclick="decipher()" />
+<input type="button" value="Break" onclick="frequency()" />
+<p id="Answer"></p>
+<br><br><br><br><br>
+<script src="encipher.js"></script>
+<script src="decipher.js"></script>
+<script src="frequency.js"></script>
+<p>&copy; Copyright 2016 Joshua Mudge</p>
+<p>Licensed under the Apache License 2.0, see the <a href="LICENSE.txt">license</a> file for details.</p>
+<p>Source code can be found <a href="https://livetolearntech.com:3000/joshua/Caesar-Cipher-Helper">here</a></p>
+</html>
